@@ -87,7 +87,7 @@ public class CarController {
     }
 
     @DeleteMapping("/{carId}")
-    public ResponseEntity updateCar(@PathVariable Long carId) {
+    public ResponseEntity deleteCar(@PathVariable Long carId) {
         boolean isPresent = carRepository.existsById(carId);
 
         if(isPresent){
